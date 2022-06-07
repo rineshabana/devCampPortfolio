@@ -1,0 +1,6 @@
+<h1>Home Page</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+<% @blogs.each do |b|%>
+	<h2><%=b.title%></h2>
+	<h1><%= b.body%></h1>
+<% end %>
