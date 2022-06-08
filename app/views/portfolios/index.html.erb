@@ -1,0 +1,7 @@
+<h1>Portfolio Items</h1>
+<% @portfolio_items.each do |portfolio|%>
+<p><%= portfolio.title %></p>
+<p><%= portfolio.body %></p>
+<p><%= image_tag portfolio.main_image unless portfolio.main_image.nil? %></p>
+
+	<%end%>
