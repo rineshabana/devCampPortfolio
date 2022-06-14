@@ -2,7 +2,7 @@
 <!-- <a href="Portfolios/new">Create new Item</a> -->
 <%= link_to "Create new Item",new_portfolio_path %>
 <% @portfolio_items.each do |portfolio|%>
-<%= link_to portfolio.title,portfolio_path(portfolio.id) %>
+<%= link_to portfolio.title,portfolio_show_path(portfolio.id) %>
 
 <p><%= portfolio.title %></p>
 <p><%= portfolio.body %></p>
