@@ -5,6 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+3.times do |topic|
+	Topic.create!(
+    title: "topic #{topic}"
+		)
+end
+    
 
 10.times do |blog| Blog.create!( 
 title: "My Blog Post #{blog}" ,
@@ -17,6 +23,7 @@ into electronic typesetting, remaining essentially unchanged. It was
 popularised in the 1960s with the release of Letraset sheets containing Lorem
 Ipsum passages, and more recently with desktop publishing software like Aldus
 PageMaker including versions of Lorem Ipsum." 
+topic_id: Topic.last.id
 ) 
 end
 
@@ -29,9 +36,21 @@ end
 
 puts "5 skills created"
 
-9.times do |portfolio_item|
+8.times do |portfolio_item|
 Portfolio.create!(
-title: "Portfolio title #{portfolio_item}",
+title: "Ruby on Rails #{portfolio_item}",
+body: "It has survived not only five centuries, but also the leap
+into electronic typesetting, remaining essentially unchanged. It was
+popularised in the 1960s with the release of Letraset sheets containing Lorem
+Ipsum passages, and more recently with desktop publishing software like Aldus
+PageMaker including versions of Lorem Ipsum.",
+main_image: "http://placehold.it/600x200"
+)
+end
+
+1.times do |portfolio_item|
+Portfolio.create!(
+title: "Angular #{portfolio_item}",
 body: "It has survived not only five centuries, but also the leap
 into electronic typesetting, remaining essentially unchanged. It was
 popularised in the 1960s with the release of Letraset sheets containing Lorem
