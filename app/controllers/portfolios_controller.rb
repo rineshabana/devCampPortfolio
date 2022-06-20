@@ -3,6 +3,12 @@ class PortfoliosController < ApplicationController
 		@portfolio_items = Portfolio.all
 	end
 
+
+def ror
+@portfolio_items = Portfolio.ror_scope
+render :index
+end
+
 	def new
 		@portfolio_item = Portfolio.new
 	end
