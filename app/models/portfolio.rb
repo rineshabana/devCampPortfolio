@@ -1,4 +1,5 @@
 class Portfolio < ApplicationRecord
+	include Placeholder
 	validates_presence_of :title, :body, :main_image
 
 	def self.ror
@@ -10,6 +11,6 @@ class Portfolio < ApplicationRecord
 	after_initialize :set_defaults
 
 	def set_defaults
-		self.main_image ||= "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+		self.main_image ||= Placeholder.image_generator(height: '250',widht: '250')
 	end
 end
