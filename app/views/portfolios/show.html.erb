@@ -1,3 +1,7 @@
 <h1><%= @portfolio_item.title %></h1>
 <p><%= @portfolio_item.body %></p>
 <p><%= image_tag @portfolio_item.main_image %></p>
+<h2>Technologies Used:</h2>
+<% @portfolio_item.technologies.each do |t|%>
+<p><%= t.name%></p>
+<% end %>
