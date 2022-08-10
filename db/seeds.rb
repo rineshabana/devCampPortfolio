@@ -59,3 +59,10 @@ PageMaker including versions of Lorem Ipsum.",
 main_image: "http://placehold.it/600x200"
 )
 end
+
+3.times do |technology|
+	Portfolio.last.technologies.create!(
+		name: "Technology #{technology}"
+		)
+end
+	puts "3 technologies items createds"
