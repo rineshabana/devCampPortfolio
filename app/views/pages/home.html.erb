@@ -8,3 +8,7 @@ Hi ,<%= current_user.first_name %>
 <%= @skill.inspect%>
 
 <%= sample_helper %>
+
+<%= content_tag :p, class: "my-special-class" do %>
+Hi, I'm in a paragraph tag
+<% end %>
