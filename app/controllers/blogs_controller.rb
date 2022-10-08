@@ -4,7 +4,15 @@ class BlogsController < ApplicationController
   #before_action :authenticate_user!, only: [:new, :edit, :create, :destroy]
   # GET /blogs or /blogs.json
   def index
-    @blogs = Blog.all
+   # binding.pry
+    @blogs = Blog.special_blogs
+   # binding.pry
+    @blogs = Blog.featured_blogs
+   # binding.pry
+   # byebug
+    # puts "*" * 100
+    # puts @blogs.inspect
+    # puts "*" * 100
   end
 
   # GET /blogs/1 or /blogs/1.json
