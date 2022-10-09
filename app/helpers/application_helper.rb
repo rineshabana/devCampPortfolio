@@ -23,4 +23,8 @@ module ApplicationHelper
 			
 	    end
 	end
+
+	def set_copyright
+	  ShabanaViewTool::Renderer.copyright 'Shabana Noor', 'All rights reserved'
+	end
 end
