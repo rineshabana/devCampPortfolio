@@ -58,4 +58,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'shabana_view_tool' , git: "https://github.com/rineshabana/shabana_view_tool"
+gem 'shabana_view_tool'
+gem 'petergate', '~> 3.0'
