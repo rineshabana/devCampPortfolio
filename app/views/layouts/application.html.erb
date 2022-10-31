@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>DevCampPortfolio</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
@@ -9,15 +11,22 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
-<body>
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
   
-<%= render "shared/nav" ,location: 'top'%>
+    <%= render "shared/nav" ,location: 'top'%>
 
- <%= login_helper %>
-  <%= yield %>
- <%= set_copyright %>
-  <%= source_helper("application") %>
+  <main role="main" class="inner cover">
+  
+   <%= yield %>
+   <%= render "shared/footer" %>
+   <%= source_helper("application") %>
+
+  </main>
+
+ 
+</div>
 </body>
 </html>
