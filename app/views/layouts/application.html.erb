@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>DevCampPortfolio</title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DevCampPortfolio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-<body class="text-center">
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  
-    <%= render "shared/nav" ,location: 'top'%>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <%= render "shared/nav" ,location: 'top'%>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
-  <main role="main" class="inner cover">
-  
-   <%= yield %>
-   <%= render "shared/footer" %>
-   <%= source_helper("application") %>
+      <main role="main" class="inner cover">
+      
+        <%= yield %>
+      
+        <%= source_helper("application") %>
 
-  </main>
-
- 
-</div>
-</body>
+      </main>
+        <%= render "shared/footer" %>
+    </div>
+  </body>
 </html>
