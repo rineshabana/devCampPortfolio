@@ -36,13 +36,7 @@
       <!--End of nav -->
 
       <!-- start of blog header-->
-        <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-            <div class="col-md-6 px-0">
-              <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-              <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-              <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:admin)%>
-            </div>
-          </div>
+      <%= render 'shared/blog_masthead' %>
       <!-- end of blog header-->
 
       <!-- start of container and row element-->
@@ -54,17 +48,11 @@
                   
                   <%= render 'shared/blog_sidebar' %>
            </div>
-          
+
 
                   <!-- start of footer-->
-                      <footer class="blog-footer">
-                        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-                        <p>
-                          <a href="#">Back to top</a>
-                        </p>
-                      </footer>
+                <%= render 'shared/blog_footer' %>
                   <!-- end of footer-->
-
            <%= source_helper("blog") %>
   </div>
 </body>

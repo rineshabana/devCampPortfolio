@@ -7,14 +7,16 @@ class BlogsController < ApplicationController
   # GET /blogs or /blogs.json
   def index
    # binding.pry
-    @blogs = Blog.special_blogs
-   # binding.pry
-    @blogs = Blog.featured_blogs
+  #   @blogs = Blog.special_blogs
+  #  # binding.pry
+  #   @blogs = Blog.featured_blogs
    # binding.pry
    # byebug
     # puts "*" * 100
     # puts @blogs.inspect
     # puts "*" * 100
+    #getting error
+    @blogs = Blog.page(params[:page]).per(5)
   end
 
   # GET /blogs/1 or /blogs/1.json
