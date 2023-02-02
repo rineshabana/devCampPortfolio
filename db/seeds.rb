@@ -44,7 +44,7 @@ into electronic typesetting, remaining essentially unchanged. It was
 popularised in the 1960s with the release of Letraset sheets containing Lorem
 Ipsum passages, and more recently with desktop publishing software like Aldus
 PageMaker including versions of Lorem Ipsum.",
-main_image: "http://placehold.it/600x200"
+main_image: "https://unsplash.it/g/600/400"
 )
 end
 
@@ -56,7 +56,7 @@ into electronic typesetting, remaining essentially unchanged. It was
 popularised in the 1960s with the release of Letraset sheets containing Lorem
 Ipsum passages, and more recently with desktop publishing software like Aldus
 PageMaker including versions of Lorem Ipsum.",
-main_image: "http://placehold.it/600x200"
+main_image: "https://unsplash.it/g/600/400"
 )
 end
 
