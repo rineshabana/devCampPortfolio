@@ -3,7 +3,7 @@
               <div class="card mb-4 box-shadow">
               <%= image_tag portfolio_item.main_image unless portfolio_item.main_image.nil? %>
                 <div class="card-body">
-                  <p class="card-text"><span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span>< <%= portfolio_item.title %>/p>
+                  <p class="card-text"><span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span><%= portfolio_item.title %></p>
 
                 </div>
               </div>
